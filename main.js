@@ -11,11 +11,11 @@
 	};
 
 	let request = function(){
-		t.ajax('file.xml', {
+		t.ajax('file.txt', {
 			method: 'GET',
 			data: {},
 			complete: function(response){
-				console.log(response);
+				document.getElementsByClassName('box')[0].innerHTML = response;
 			}
 		});
 	};
